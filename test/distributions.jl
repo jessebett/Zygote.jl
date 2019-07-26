@@ -7,6 +7,9 @@ function f(a,b)
 end
 @test gradient(f, 1, 2) = 1234
 
+@test Zygote.forward(d->rand(MersenneTwister(123456), d, 4), Normal(0.0, 1.0))
+
+
 # Yet to implement:
 #     uni_dists = [
 #         Arcsine(2, 4),
