@@ -35,6 +35,7 @@ include("lib/nnlib.jl")
 include("lib/broadcast.jl")
 include("lib/forward.jl")
 include("lib/utils.jl")
+@init @require Distributions="31c24e10-a181-5473-b8eb-7969acd0382f" include("lib/distributions.jl")
 @init @require Distances="b4f34e82-e78d-54a5-968a-f98e89d6e8f7" include("lib/distances.jl")
 @init @require StatsFuns="4c63d2b9-4356-54db-8cca-17b64c39e42c" include("lib/statsfuns.jl")
 
